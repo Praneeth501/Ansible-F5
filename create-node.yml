@@ -1,0 +1,16 @@
+---
+
+- name: create a node
+  hosts: testf5
+  tasks:
+   - name: create a node
+     bigip_node:
+      host: "100.100.100.100"
+      name: "pool_1"
+      server: "MMI-DC01-LAB-TEST2.mmi.mig.corp"
+      user: "admin"
+      password: "mig!uj@cmg"
+      server_port: "80"
+      state: present
+      validate_certs: "no"
+     delegate_to: localhost 
