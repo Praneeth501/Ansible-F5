@@ -1,6 +1,7 @@
 ---
 
 - name: create a node
+  hosts: testf5
   connection: local
   tasks:
    - name: create a node
